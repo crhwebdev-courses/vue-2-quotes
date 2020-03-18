@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <QuoteGrid :quotes="quotes"></QuoteGrid>
+    <app-quote-grid :quotes="quotes"></app-quote-grid>
   </div>
 </template>
 
@@ -13,7 +13,7 @@ export default {
       maxQuotes: 10
     };
   },
-  components: { QuoteGrid }
+  components: { appQuoteGrid: QuoteGrid }
 };
 </script>
 
