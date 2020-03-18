@@ -1,10 +1,8 @@
 <template>
   <div class="row">
-    <div v-for="quote in quotes">
-      <Quote>
-        {{ quote }}
-      </Quote>
-    </div>
+    <app-quote v-for="quote in quotes">
+      {{ quote }}
+    </app-quote>
   </div>
 </template>
 
@@ -14,7 +12,7 @@ export default {
   name: "QuoteGrid",
   props: ["quotes"],
   components: {
-    Quote
+    appQuote: Quote
   }
 };
 </script>
