@@ -1,10 +1,10 @@
 # vue-cli
 
-> A Vue.js project
+A project for the Udemy course: Vue JS 2 The Complete Guide. It allows the user to enter up to 11 quotes and display them on the screen.
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 npm install
 
