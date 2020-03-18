@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <app-new-quote></app-new-quote>
+    <app-new-quote @quoteAdded="newQuote"></app-new-quote>
     <app-quote-grid :quotes="quotes"></app-quote-grid>
   </div>
 </template>
@@ -15,7 +15,12 @@ export default {
       maxQuotes: 10
     };
   },
-  components: { appQuoteGrid: QuoteGrid, appNewQuote: NewQuote }
+  components: { appQuoteGrid: QuoteGrid, appNewQuote: NewQuote },
+  methods: {
+    newQuote(quote) {
+      this.quotes.push(quote);
+    }
+  }
 };
 </script>
 
